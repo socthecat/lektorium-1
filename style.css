@@ -1,2 +1,127 @@
 html, body {margin: 0;padding: 0;font-family: 'Roboto Condensed', sans-serif;}
 * {box-sizing:border-box;}
+
+.row-1, .row-2,
+.column1__row-1, .column1__row-2 {
+    display: flex;
+}
+.main-dsgn {
+    display: flex;
+    flex-basis: 69%;
+    background-color: #e9eae2;
+    height: 500px;
+    justify-content: space-around;
+}
+.info-menu {
+    flex-basis: 31%;
+    background-color: #7acec3;
+    height: 500px;
+    background-image: linear-gradient(to bottom right, transparent calc(50% - 1px), #e9eae2, transparent calc(50% + 1px));
+}
+.projects {
+    flex-basis: 45%;
+    background-color: #ebb240;
+    height: 500px;
+    background-image: linear-gradient(to bottom right, transparent calc(50% - 1px), #e9eae2, transparent calc(50% + 1px));
+}
+.fondue {
+    flex-basis: 55%;
+    background-color: #ffffff;
+    height: 500px;
+}
+.louis {
+    flex-basis: 29%;
+    background: linear-gradient(to right, #617279, #67767f, #6e7b85, #757f8a, #7c838f);
+    background-repeat: no-repeat;
+    height: 465px;
+}
+.chair-395 {
+    flex-basis: 71%;
+    background-color: #eaeaea;
+    height: 465px;
+}
+.potter {
+    background-color: #dfe0d9;
+    height: 250px;
+}
+.tabano {
+    background-color: #f7f7f3;
+    height: 465px;
+}
+.fiji {
+    background-color: #ffffff;
+    height: 250px;
+}
+
+.column-1 {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 69%;
+}
+.column-2 {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 31%;
+}
+
+.dsgn-col {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    justify-content: center;
+    align-items: left;
+}
+.dsgn-col img {
+    width: 100%;
+}
+.main-chairs {
+    width: 530px;
+    height: 467px;
+    justify-content: center;
+}
+.ASD {
+    text-transform: uppercase;
+    color: #393d3c;
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 400;
+}
+.social-icons {
+    display: flex;
+    align-self: center;
+    margin-top: 50px;
+}
+.social-icons a {
+    padding: 3px;
+}
+.social-icons a img:hover {
+    opacity: .5;
+}
+
+.menu-icon {
+    width: 100px;
+    height: 100px;
+    border: 3px solid #e9eae2;
+    background-image: url('img/menu-lines.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    cursor: pointer;
+    justify-self: center;
+    margin: 30px auto 0;
+}
+.address, .phone-email {
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 14px;
+}
+.address {
+    margin-top: 100px;
+    margin-left: 10%;
+}
+.phone-email {
+    margin-top: 40px;
+    margin-left: 40%;
+}
