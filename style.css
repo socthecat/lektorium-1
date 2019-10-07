@@ -3,9 +3,13 @@ html, body {margin: 0;padding: 0;font-family: 'Roboto Condensed', sans-serif;}
 a {text-decoration: none;}
 h3 {margin: 0;}
 
-.row-1, .row-2,
+.row-1, .row-2, .row-3, .row-4, .row-5, .row-6, .row-7,
 .column1__row-1, .column1__row-2 {
     display: flex;
+}
+.row-5 {
+    background-color: #e9eae2;
+    height: 390px;
 }
 .main-dsgn {
     display: flex;
@@ -37,26 +41,97 @@ h3 {margin: 0;}
 }
 .louis {
     flex-basis: 29%;
-    background: linear-gradient(to right, #617279, #67767f, #6e7b85, #757f8a, #7c838f);
+    background-image: url('img/chair.png'), linear-gradient(to right, #617279, #67767f, #6e7b85, #757f8a, #7c838f);
     background-repeat: no-repeat;
+    background-position: bottom center;
     height: 465px;
 }
 .chair-395 {
     flex-basis: 71%;
     background-color: #eaeaea;
     height: 465px;
+    background-image: url('img/395.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
 }
 .potter {
     background-color: #dfe0d9;
     height: 250px;
+    background-image: url('img/potter.png');
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: 120%;
 }
 .tabano {
-    background-color: #f7f7f3;
+    background-color: #e9eae2;
     height: 465px;
+    background-image: url('img/tabano.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    position: relative;
 }
 .fiji {
     background-color: #ffffff;
     height: 250px;
+    background-image: url('img/fiji.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+.sesann {
+    height: 300px;
+    flex-basis: 44%;
+    background-color: #fcfcfc;
+    background-image: url('img/sesann.png');
+    background-repeat: no-repeat;
+    background-position: center 10%;
+    position: relative;
+}
+.alessi {
+    height: 300px;
+    flex-basis: 25%;
+    background-color: #cecece;
+    background-image: url('img/alessi.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+}
+.timeline {
+    height: 300px;
+    flex-basis: 31%;
+    background-color: #ebb240;
+}
+.studio {
+    flex-basis: 31%;
+    background-color: #ff9b6d;
+    height: 500px;
+    background-image: linear-gradient(to bottom right, transparent calc(50% - 1px), #e9eae2, transparent calc(50% + 1px));
+}
+.studio-desc {
+    flex-basis: 69%;
+    display: flex;
+    background-color: #e9eae2;
+}
+.news {
+    flex-basis: 31%;
+    background-color: #7acec3;
+    height: 500px;
+    background-image: linear-gradient(to bottom right, transparent calc(50% - 1px), #e9eae2, transparent calc(50% + 1px));
+}
+.news-content {
+    display: flex;
+    flex-basis: 69%;
+}
+.map {
+    flex-basis: 50%;
+    height: 644px;
+}
+footer {
+    flex-basis: 50%;
+    height: 644px;
+    background-color: #e9eae2;
 }
 
 .column-1 {
@@ -111,7 +186,7 @@ h3 {margin: 0;}
     background-image: url('img/menu-lines.svg');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 50%;
+    background-size: 35%;
     cursor: pointer;
     justify-self: center;
     margin: 30px auto 0;
@@ -139,19 +214,21 @@ ul {
 .projects-nav {
     margin-top: 160px;
     margin-left: 30%;
-    line-height: 14px;
+    line-height: 13px;
 }
-.projects-nav li a {
+.projects-nav li a,
+.timeline-nav li a {
     color: #fff;
     font-weight: 400;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 13px;
     position: relative;
 }
 .projects-nav li a:hover {
     color: #000;
 }
-.projects-nav li a:hover:before {
+.projects-nav li a:hover:before,
+.timeline-nav li a:hover:before {
     position: absolute;
     display: block;
     content: url("img/arrow_icon(1).svg");
@@ -174,20 +251,21 @@ ul {
     width:50%;
     margin-left: 15%;
 }
-.fondue-text {
+.project-text {
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #333;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    text-transform: uppercase;
-    font-weight: 300;
 }
-.fondue-title {
+.project-title {
     text-transform: uppercase;
     font-size: 20px;
     font-weight: 300;
     margin-bottom: 10px;
 }
-.fondue-text p {
+.project-text p {
     font-size: 12px;
 }
 .bold-text {
@@ -216,8 +294,109 @@ ul {
     color: #ff0000;
     font-weight: 300;
     text-transform: uppercase;
+    cursor: pointer;
 }
 .heart:before {
     content: url('img/heart.svg');
     display: block;
+}
+.louis .project-text {
+    color: #fefefe;
+}
+.louis .view-project {
+    color: #fff;
+}
+.louis .heart:before {
+    content: url('img/heart-white.svg');
+}
+.louis-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+    height: 50%;
+    margin-top: 30px;
+    margin-left: 10%;
+}
+.chair395-wrapper {
+    display: flex;
+    height: 100px;
+    margin-top: 70px;
+    margin-left: 40%;
+}
+.buttons-395 {
+    margin-left: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.potter p {
+    margin-bottom: 0;
+}
+.potter-wrapper {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+    margin-top: 30px;
+    margin-left: 8%;
+}
+.potter-text {
+    text-transform: initial;
+    font-size: 12px;
+}
+.tabano-wrapper {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    justify-content: space-around;
+}
+.fiji-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    height: 200px;
+    justify-content: space-between;
+    margin-left: 55%;
+    margin-top: 30px;
+}
+.sesann-wrapper {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 75%;
+    justify-content: space-around;
+    left: calc((100% - 75%)/2);
+}
+.alessi-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 70%;
+    justify-content: space-around;
+    margin-left: 50%;
+    margin-top: 50px;
+}
+.timeline-wrapper {
+    display: flex;
+    width: 80%;
+    height: 100%;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom right, transparent calc(50% - 1px), #e9eae2, transparent calc(50% + 1px));
+}
+.timeline-title {
+    color: #333;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 0;
+    font-weight: 400;
+    margin-top: 50px;
+}
+.timeline-title, .timeline-nav {
+    margin-left: 30%;
 }
