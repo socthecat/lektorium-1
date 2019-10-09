@@ -1,0 +1,285 @@
+@media only screen and (max-width: 1080px) {
+    .row-2 {
+        flex-direction: column;
+    }
+    .column-2 {
+        flex-direction: row;
+        flex-basis: 100%;
+    }
+    .potter {
+        flex-basis: 33%;
+        height: 25vw;
+    }
+    .tabano {
+        flex-basis: 33%;
+        height: 25vw;
+    }
+    .fiji {
+        flex-basis: 33%;
+        height: 25vw;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .row-1 {
+        flex-direction: column;
+    }
+    .main-dsgn {
+        flex-basis: 100%;
+    }
+    .info-menu {
+        flex-basis: unset;
+        height: 35vw;
+    }
+    .address, .phone-email {
+        font-size: 1.5vw;
+        line-height: 1.5vw;
+    }
+    .address {
+        margin-top: 2vw;
+    }
+    .phone-email {
+        margin-top: 7vw;
+        margin-left: 70%;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .column1__row-1, .column1__row-2, .column-2, 
+    .row-3, .row-4, .row-5, .row-6, .row-7,
+    .studio-desc-wrapper, .people, .news-content, .info-wrapper {
+        flex-direction: column;
+    }
+    .row-5, .people, .news-content, footer {
+        height: unset;
+    }
+    .staff, .people, .studio-desc-wrapper,
+    .studio-desc-right, .news-content, .map, footer {
+        flex-basis: unset;
+    }
+    .staff {
+        height: 50vw;
+    }
+    .main-dsgn, .info-menu, .projects,
+    .potter, .tabano, .fiji,
+    .sesann, .alessi, .timeline,
+    .studio,
+    .studio-desc-left,
+    .news {
+        flex-basis: unset;
+        height: 60vw;
+    }
+    .project-title {
+        font-size: 3.483vw;
+    }
+    .project-text p, .view-project {
+        font-size: 2vw;
+    }
+    .heart:before {
+        width: 4vw;
+        height: 4vw;
+    }
+    .heart {
+        font-size: 1.5vw;
+    }
+
+    .main-chairs {
+        display: none;
+    }
+    .dsgn-col {
+        width: 25%;
+    }
+    .ASD {
+        line-height: 2vw;
+        font-size: 2vw;
+    }
+    .social-icons .fab {
+        font-size: 3vw;
+    }
+    .social-icons a {
+        margin: 0.5vw;
+    }
+    .menu-icon {
+        width: 15vw;
+        height: 15vw;
+    }
+    .address, .phone-email {
+        font-size: 2.5vw;
+        line-height: 2.5vw;
+    }
+    .phone-email {
+        margin-top: 12vw;
+        margin-left: 60%;
+    }
+
+    .projects-title {
+        font-size: 7vw;
+        margin-left: 60%;
+        margin-top: 17vw;
+    }
+    .projects-nav {
+        margin-left: 20%;
+    }
+
+    .fondue {
+        flex-basis: unset;
+        height: 60vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .fondue-wrapper {
+        width: 80%;
+        margin-left: 0;
+    }
+    .louis {
+        flex-basis: unset;
+        background-size: 40%, 100%;
+        background-position: 90% 100%;
+        height: 60vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .louis-wrapper {
+        width: 80%;
+        margin-top: 0;
+        margin-left: 0;
+    }
+    .chair-395 {
+        flex-basis: unset;
+        height: 60vw;
+    }
+    .buttons-395 {
+        height: 10vw;
+    }
+    .potter-text {
+        font-size: 2vw;
+    }
+    .sesann-wrapper {
+        height: unset;
+    }
+    .alessi {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .alessi-wrapper {
+        margin: 0;
+    }
+    .projects-nav li a, .timeline-nav li a {
+        font-size: 2.5vw;
+        line-height: 2.6vw;
+    }
+    .timeline-title {
+        font-size: 3vw;
+        line-height: 3.9vw;
+        margin-top: 11vw;
+    }
+    .projects-nav li a:hover:before, .timeline-nav li a:hover:before {
+        width: 2.5vw;
+        height: 2vw;
+        left: -3vw;
+    }
+    .studio-title, .news-title {
+        font-size: 7vw;
+        margin-left: 60%;
+        margin-top: 40vw;
+    }
+    .staff-wrapper, .staff-title {
+        font-size: 3vw;
+    }
+    .studio-desc-wrapper {
+        align-items: center;
+    }
+    .studio-desc-left, .studio-desc-right,
+    .news-content article {
+        width: 80%;
+    }
+    .studio-desc-left p {
+        font-size: 3vw;
+        line-height: 3vw;
+        margin: 1vw 0;
+    }
+    .studio-desc-left{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .awards-title {
+        font-size: 3vw;
+        line-height: 3vw;
+        text-transform: uppercase;
+        margin: 5% 0 2%;
+    }
+    .awards-wrapper p {
+        font-size: 2vw;
+        line-height: 2.5vw;
+    }
+    .person-card {
+        width: 70%;
+        margin-bottom: 2vw;
+    }
+    .person-card h4, .person-card p {
+        font-size: 2vw;
+        line-height: 2.2vw;
+    }
+    .CV a {
+        font-size: 2.5vw;
+        height: 2.5vw;
+    }
+    .CV a:after {
+        margin-left: .8vw;
+        width: 2.5vw;
+        height: 2vw;
+    }
+    .person-card .social-icons .fab {
+        font-size: 2.2vw;
+    }
+    .news-content article h3 {
+        height: 4vw;
+        font-size: 3vw;
+        line-height: 3vw;
+    }
+    .news-content article {
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+    }
+    .news-content article time {
+        line-height: 2.8vw;
+        font-size: 2vw;
+    }
+    .news-content article p {
+        font-size: 2vw;
+        line-height: 2.3vw;
+    }
+    .news-content article a.read-more {
+        font-size: 2vw;
+        line-height: 2.2vw;
+    }
+    .map {
+        height: 84vw;
+    }
+    .map-marker {
+        width: 6.672vw;
+        height: 8.895vw;
+        left: 36.608vw;
+        top: 33.644vw;
+    }
+    .info-wrapper {
+        width: 80%;
+        height: unset;
+        align-items: center;
+        flex-direction: column-reverse;
+        margin-top: 2vw;
+    }
+    .footer-address {
+        font-size: 2.3vw;
+        line-height: 2.5vw;
+        text-align: end;
+    }
+    .copyright {
+        font-size: 2vw;
+        margin: 1vw 0;
+    }
+    .info-wrapper div {
+        width: 40%;
+    }
+}

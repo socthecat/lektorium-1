@@ -572,6 +572,7 @@ ul {
     display: flex;
     align-items: center;
     font-size: 1.186vw;
+    height: 1.186vw;
 }
 .CV a:hover {
     opacity: .7;
@@ -589,6 +590,8 @@ ul {
     display: flex;
     align-self: center;
     margin-top: 0;
+    height: 1.186vw;
+    align-items: flex-end;
 }
 .person-card .social-icons .fab {color:#ff5000; font-size: 0.964vw;}
 .person-card .social-icons a {
