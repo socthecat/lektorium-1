@@ -125,6 +125,7 @@
     }
     .projects-nav {
         margin-left: 20%;
+        margin-top: 70px;
     }
 
     .fondue {
@@ -136,6 +137,7 @@
     }
     .fondue-wrapper {
         width: 80%;
+        height: 60vw;
         margin-left: 0;
     }
     .louis {
@@ -289,5 +291,8 @@
     }
     .info-wrapper div {
         width: 40%;
+    }
+    .chair395-wrapper {
+        margin-top: 25px;
     }
 }
